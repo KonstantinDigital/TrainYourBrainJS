@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренируем память</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="gameControl">
+        <form class="rowColumn" name="enterRowColumn">
+            <div class="enterRow">
+                <p class="textEnterRowColumn">Выберите количество рядов от 1 до 4:</p>
+                <select id="selectRow" class="choice" name="row">
+                    <option class="choice" value="1">1</option>
+                    <option class="choice" value="2">2</option>
+                    <option class="choice" selected value="3">3</option>
+                    <option class="choice" value="4">4</option>
+                </select>
+                <!--id="selectRow" class="choice" name="row"-->
+            </div>
+            <!--enterRow-->
+            <div class="enterColumn">
+                <p class="textEnterRowColumn">Выберите количество колонн от 1 до 9:</p>
+                <select id="selectColumn" class="choice" name="column">
+                    <option class="choice" value="1">1</option>
+                    <option class="choice" value="2">2</option>
+                    <option class="choice" value="3">3</option>
+                    <option class="choice" value="4">4</option>
+                    <option class="choice" value="5">5</option>
+                    <option class="choice" selected value="6">6</option>
+                    <option class="choice" value="7">7</option>
+                    <option class="choice" value="8">8</option>
+                    <option class="choice" value="9">9</option>
+                </select>
+                <!--id="selectColumn" class="choice" name="column"-->
+            </div>
+            <!--enterColumn-->
+        </form>
+        <!--class="rowColumn" name="enterRowColumn"-->
+        <div class="buttonDiv">
+            <button id="startButton" onclick="createGame()">Сформировать</button>
+        </div>
+        <!--buttonDiv-->
+    </div>
+    <!--gameControl-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
